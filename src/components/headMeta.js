@@ -2,8 +2,8 @@ import Head from "next/head";
 import React, { useState } from 'react';
 
 const HeadMeta = ( meta ) => {
-    const Title = meta.title || "TL;DR Games";
-    const Desc = meta.desc || "TL;DR Games is your one-stop shop for quick and engaging games! Our website boasts a clean and simple interface, so you can jump right in!";
+    const Title = meta.title || "YAGVSMP";
+    const Desc = meta.desc || "Yet Another Vanilla SMP";
 
     return (
         <Head>

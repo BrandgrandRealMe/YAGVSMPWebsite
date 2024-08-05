@@ -1,0 +1,58 @@
+@import '@/styles/colors.scss';
+@import '@/styles/partials/_navbar.scss';
+
+@mixin lhCrop($line-height) {
+    &::before {
+      content: '';
+      display: block;
+      height: 0;
+      width: 0;
+      margin-top: calc((1 - #{$line-height}) * 0.5em);
+    }
+  }
+  
+.header {
+    color: $primary-foreground;
+    height: calc(100vh - ($header-height + $header-bottom_border));
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .headerTitle {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .Logo {
+            display: flex;
+            justify-content: center;
+            margin: 1rem;
+        }
+
+        .Title {
+            font-size: 5vw;
+        }
+        .SubTitle {
+            font-size: 2vw;
+        }
+    }
+
+    .IP {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        background-color: $tertiary-background;
+        border: 2px solid  $secondary-background;
+        border-radius: 15px;
+        .icon {
+            width: 18px;
+            margin: 5px;
+        }
+        .text {
+            @include lhCrop(2/18);
+        }
+    }
+}
