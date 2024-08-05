@@ -1,0 +1,20 @@
+@import '@/styles/colors.scss';
+
+.ButtonsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+
+
+    .Button {
+        padding: 15px;
+
+        .icon {
+            width: 5vw;
+            height: 5vw;
+        }
+    }
+
+}

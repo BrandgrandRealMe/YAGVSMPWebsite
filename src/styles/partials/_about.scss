@@ -1,0 +1,50 @@
+@import '@/styles/colors.scss';
+
+.AboutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    .About {
+        color: $primary-foreground;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+
+        .Title {
+            font-family: "Minecrafter", sans-serif;
+            font-size: 2vw;
+        }
+
+        .Desc {
+            font-size: 1vw;
+        }
+    }
+    .Header {
+        margin-top: 25px;
+        font-family: "Minecrafter", sans-serif;
+        font-size: 4vw;
+        color: $primary-foreground;
+    }
+    .Feature {
+        color: $primary-foreground;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+
+        .Title {
+            font-family: "Minecrafter", sans-serif;
+            font-size: 2vw;
+        }
+
+        .Desc {
+            font-size: 1vw;
+        }
+    }
+    
+}
